@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Personaje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href -->
+  <style>
+    .test-personaje { animation: fadeSlideIn 0.8s ease-out forwards; }
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .question { margin-bottom: 2rem; }
+    #resultadoPersonaje img { max-width: 200px; border-radius: 8px; margin-bottom: 1rem; }
+    #resultadoPersonaje { animation: fadeSlideIn 1s; }
+  </style>
+</head>
+<body>
+  <div id="testPersonajeSection" class="d-none">
+    <section class="container my-5 text-center test-personaje">
+      <h2>¿Qué personaje eres?</h2>
+      <p>Responde unas preguntas y descúbrelo</p>
+      <form id="personajeTest" class="mt-4">
+
+<div class="question">
+  <p>1. ¿Qué valor te define más?</p>
+  <label><input type="radio" name="q1" value="dayan" required>Lealtad y coraje</label><br>
+  <label><input type="radio" name="q1" value="melanie">Aventura y libertad</label><br>
+  <label><input type="radio" name="q1" value="jack_sparrow">Astucia y humor</label><br>
+  <label><input type="radio" name="q1" value="mara">Honor y justicia</label><br>
+  <label><input type="radio" name="q1" value="thranduil">Sabiduría y liderazgo</label><br>
+  <label><input type="radio" name="q1" value="max">Creatividad y autenticidad</label><br>
+  <label><input type="radio" name="q1" value="josh">Profundidad y protección</label><br>
+  <label><input type="radio" name="q1" value="marie">Lealtad y sensibilidad</label><br>
+  <label><input type="radio" name="q1" value="tom">Intelecto y elegancia</label><br>
+  <label><input type="radio" name="q1" value="jack_hanson">Practicidad y humor</label>
+</div>
+<div class="question">
+  <p>2. ¿Dónde te sentirías más feliz?</p>
+  <label><input type="radio" name="q2" value="dayan" required>En la nieve, rodeada de misterio</label><br>
+  <label><input type="radio" name="q2" value="melanie">Surcando los mares</label><br>
+  <label><input type="radio" name="q2" value="jack_sparrow">En una taberna, planeando la próxima aventura</label><br>
+  <label><input type="radio" name="q2" value="mara">En un bosque mágico</label><br>
+  <label><input type="radio" name="q2" value="thranduil">En un reino antiguo y majestuoso</label><br>
+  <label><input type="radio" name="q2" value="max">En una biblioteca o pintando</label><br>
+  <label><input type="radio" name="q2" value="josh">En un rincón tranquilo, leyendo</label><br>
+  <label><input type="radio" name="q2" value="marie">Con amigos, en una cafetería</label><br>
+  <label><input type="radio" name="q2" value="tom">En una charla intelectual</label><br>
+  <label><input type="radio" name="q2" value="jack_hanson">Viajando con amigos</label>
+</div>
+<div class="question">
+  <p>3. ¿Cómo enfrentas los problemas?</p>
+  <label><input type="radio" name="q3" value="dayan" required>Con coraje y apoyo</label><br>
+  <label><input type="radio" name="q3" value="melanie">Con valentía y algo de locura</label><br>
+  <label><input type="radio" name="q3" value="jack_sparrow">Con humor y astucia</label><br>
+  <label><input type="radio" name="q3" value="mara">Con estrategia y sacrificio</label><br>
+  <label><input type="radio" name="q3" value="thranduil">Con sabiduría y paciencia</label><br>
+  <label><input type="radio" name="q3" value="max">Con emociones, pero sin rendirme</label><br>
+  <label><input type="radio" name="q3" value="josh">Guardando silencio y pensando mucho</label><br>
+  <label><input type="radio" name="q3" value="marie">Apoyando a los demás y hablando claro</label><br>
+  <label><input type="radio" name="q3" value="tom">Analizando y buscando la mejor solución</label><br>
+  <label><input type="radio" name="q3" value="jack_hanson">Con humor y buscando el lado práctico</label>
+</div>
+<div class="question">
+  <p>4. ¿Qué te da más miedo perder?</p>
+  <label><input type="radio" name="q4" value="dayan" required>A tu familia y amigos</label><br>
+  <label><input type="radio" name="q4" value="melanie">Tu libertad</label><br>
+  <label><input type="radio" name="q4" value="jack_sparrow">La diversión y la aventura</label><br>
+  <label><input type="radio" name="q4" value="mara">Tu honor o tu hogar</label><br>
+  <label><input type="radio" name="q4" value="thranduil">El respeto y la paz</label><br>
+  <label><input type="radio" name="q4" value="max">Mi independencia y mi pasión</label><br>
+  <label><input type="radio" name="q4" value="josh">A las personas que amo</label><br>
+  <label><input type="radio" name="q4" value="marie">La confianza de mis amigos</label><br>
+  <label><input type="radio" name="q4" value="tom">Mi reputación y mi estabilidad</label><br>
+  <label><input type="radio" name="q4" value="jack_hanson">La cercanía con los míos</label>
+</div>
+<div class="question">
+  <p>5. ¿Cómo te describen tus amigos?</p>
+  <label><input type="radio" name="q5" value="dayan" required>Protectora y leal</label><br>
+  <label><input type="radio" name="q5" value="melanie">Divertida y valiente</label><br>
+  <label><input type="radio" name="q5" value="jack_sparrow">Astuto y carismático</label><br>
+  <label><input type="radio" name="q5" value="mara">Sabia y noble</label><br>
+  <label><input type="radio" name="q5" value="thranduil">Elegante y sabio</label><br>
+  <label><input type="radio" name="q5" value="max">Creativa y sensible</label><br>
+  <label><input type="radio" name="q5" value="josh">Reservado y protector</label><br>
+  <label><input type="radio" name="q5" value="marie">Directa y leal</label><br>
+  <label><input type="radio" name="q5" value="tom">Sabio y confiable</label><br>
+  <label><input type="radio" name="q5" value="jack_hanson">Divertido y buen amigo</label>
+</div>
+<div class="question">
+  <p>6. ¿Qué harías ante una injusticia?</p>
+  <label><input type="radio" name="q6" value="dayan" required>Luchar aunque tenga miedo</label><br>
+  <label><input type="radio" name="q6" value="melanie">Enfrentarla con valentía</label><br>
+  <label><input type="radio" name="q6" value="jack_sparrow">Buscar una solución ingeniosa</label><br>
+  <label><input type="radio" name="q6" value="mara">No descansar hasta que se repare</label><br>
+  <label><input type="radio" name="q6" value="thranduil">Meditar y actuar con justicia</label><br>
+  <label><input type="radio" name="q6" value="max">Alzar la voz aunque tiemble</label><br>
+  <label><input type="radio" name="q6" value="josh">Apoyar en silencio</label><br>
+  <label><input type="radio" name="q6" value="marie">Defender a los suyos</label><br>
+  <label><input type="radio" name="q6" value="tom">Buscar la verdad y exponerla</label><br>
+  <label><input type="radio" name="q6" value="jack_hanson">Hacer justicia con humor y acción</label>
+</div>
+<div class="question">
+  <p>7. ¿Qué poder te gustaría tener?</p>
+  <label><input type="radio" name="q7" value="dayan" required>Controlar la naturaleza</label><br>
+  <label><input type="radio" name="q7" value="melanie">Hablar con animales marinos</label><br>
+  <label><input type="radio" name="q7" value="jack_sparrow">Suerte infinita</label><br>
+  <label><input type="radio" name="q7" value="mara">Sanar heridas</label><br>
+  <label><input type="radio" name="q7" value="thranduil">Leer mentes</label><br>
+  <label><input type="radio" name="q7" value="max">Crear realidades con arte</label><br>
+  <label><input type="radio" name="q7" value="josh">Sanar corazones</label><br>
+  <label><input type="radio" name="q7" value="marie">Leer emociones</label><br>
+  <label><input type="radio" name="q7" value="tom">Saber siempre la verdad</label><br>
+  <label><input type="radio" name="q7" value="jack_hanson">Teletransportarse</label>
+</div>
+<div class="question">
+  <p>8. ¿Qué te hace feliz?</p>
+  <label><input type="radio" name="q8" value="dayan" required>La familia unida</label><br>
+  <label><input type="radio" name="q8" value="melanie">La aventura y el mar</label><br>
+  <label><input type="radio" name="q8" value="jack_sparrow">El riesgo y la diversión</label><br>
+  <label><input type="radio" name="q8" value="mara">La paz y la justicia</label><br>
+  <label><input type="radio" name="q8" value="thranduil">El equilibrio y la belleza</label><br>
+  <label><input type="radio" name="q8" value="max">Crear y descubrir historias</label><br>
+  <label><input type="radio" name="q8" value="josh">El amor verdadero</label><br>
+  <label><input type="radio" name="q8" value="marie">Ayudar a los demás</label><br>
+  <label><input type="radio" name="q8" value="tom">El conocimiento y la calma</label><br>
+  <label><input type="radio" name="q8" value="jack_hanson">La amistad y el humor</label>
+</div>
+<button type="submit" class="btn btn-gold mt-4">Ver resultado</button>
+      </form>
+      <div id="resultadoPersonaje" class="mt-5"></div>
+    </section>
+  </div>
+</body>
+</html>
