@@ -62,32 +62,9 @@ class ContactForm {
     }
 
     async sendEmail(data) {
-        // Usar EmailJS (recomendado) o un servicio similar
-        // Aquí un ejemplo con EmailJS
-        
-        // Primero, registra una cuenta en https://www.emailjs.com/
-        // Luego configura tu servicio y template
-        
-        const serviceID = 'tu_service_id';
-        const templateID = 'tu_template_id';
-        const publicKey = 'tu_public_key';
-
-        const templateParams = {
-            from_name: data.nombre,
-            from_email: data.email,
-            subject: data.asunto,
-            message: data.mensaje,
-            to_email: 'historiasofnina05@gmail.com'
-        };
-
-        // Si usas EmailJS, descomenta esto:
-        /*
-        return await emailjs.send(serviceID, templateID, templateParams, publicKey);
-        */
-
-        // Alternativa: Usar Formspree (más simple)
-        // Ve a https://formspree.io/ y usa este código:
-        const response = await fetch('https://formspree.io/f/xdknvjvg', { // Reemplaza con tu Formspree endpoint
+    async sendEmail(data) {
+        // Formspree
+        const response = await fetch('https://https://formspree.io/f/xeopygaq', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -105,7 +82,6 @@ class ContactForm {
 
         return response;
     }
-
     setLoading(loading) {
         if (loading) {
             this.spinner.classList.remove('d-none');
@@ -129,4 +105,5 @@ class ContactForm {
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
     new ContactForm();
+
 });
