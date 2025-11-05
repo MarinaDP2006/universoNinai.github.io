@@ -125,18 +125,22 @@
 </head>
 <body>
 
-  <!-- Menú desplegable fijo -->
-  <div class="dropdown-menu-wrapper">
-    <div class="dropdown">
-      <button class="btn btn-gold dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-        ☰ Menú
+  <!-- Navbar común -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
       </button>
-      <ul class="dropdown-menu" aria-labelledby="menuDropdown">
-        <li><a class="dropdown-item" href="index.html">Inicio</a></li>
-        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="historias.html">Historias</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item" id="loginItem"><a class="nav-link" href="authGoogle.html">Login</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
 
   <!-- Icono de usuario fijo con enlace directo -->
   <a href="authGoogle.html" class="user-login-button" title="Iniciar sesión">👤</a>
