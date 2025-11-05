@@ -1,7 +1,5 @@
 Dominio: ariesdetinta.com
-Para usar el dominio:
-Elegir un hosting (puedo ayudarte a comparar opciones).
-Subir tu sitio web (puede ser con FTP o usar GitHub Pages si es estático).
+Para usar el dominio, elegir un hosting (puedo ayudarte a comparar opciones) y subir tu sitio web
 
 ENLACES:
 Wattpad: https://www.wattpad.com/user/Ninai_06
@@ -15,6 +13,7 @@ Historias
 Sobre mí
 Contacto
 Iniciar sesión / Registrarse
+
 2. Historias
 Cada historia tendrá:
 Portada (imagen)
@@ -22,23 +21,25 @@ Descripción breve
 Plataforma (Wattpad, Inkitt)
 Botón “+ Info” → lleva a una página exclusiva de la historia
 Página exclusiva de cada historia: Solo visible completa si el usuario está logueado
-Secciones:
+- Secciones:
 Personajes (con imágenes y descripciones interactivas)
 Lugares (imágenes + descripciones)
 Temas / Géneros
 Enlace directo a la historia en Wattpad/Inkitt
+
 3. Sobre Mí
 Avatar
 Biografía
 Enlaces a tus redes sociales
 ¿Por qué escribes? ¿Qué te inspira?
+
 4. Contacto
 Formulario: Nombre, Email, Mensaje, Botón de enviar
+
 5. Sistema de Usuario
 Registro / Login
 Solo usuarios registrados pueden ver: Personajes, lugares y detalles extendidos de las historias
 Panel de usuario (opcional): Ver perfil completo (tanto de Wattpad como Inkitt)
-
 
 6. Diseño y Funcionalidades Técnicas
 Responsive (adaptado a móvil y PC)
@@ -80,17 +81,11 @@ SECCIONES PRINCIPALES
 - Enlaces a redes sociales
 - Call-to-action para registrarse
 
-
-
-
-
-
 2. SISTEMA DE USUARIOS
 Usuarios NO registrados:
 Ver portada de historias, leer descripción básica
 Ver información sobre ti
 Acceder a formulario de contacto
-
 Usuarios REGISTRADOS a través de Google:
 Todo lo anterior + Acceso a personajes detallados
  Imágenes exclusivas con descripciones extendidas
