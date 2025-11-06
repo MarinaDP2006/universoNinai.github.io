@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins&display=swap" rel="stylesheet">
 
   <style>
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -48,6 +49,40 @@
 
     .btn-gold:hover {
       background-color: #c9a32f;
+    }
+
+    .section-titulos {
+      background-color: rgba(28, 28, 28, 0.8);
+      color: #f5f5f5;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .section-titulos h2 {
+      margin-bottom: 20px;
+      color: #D4AF37;
+    }
+
+    .titulos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .titulo-box {
+      background-color: #1C1C1C;
+      border: 1px solid #D4AF37;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .titulo-box:hover {
+      transform: scale(1.05);
+      background-color: #2a2a2a;
     }
     .story-card {
       background-color: rgba(28, 28, 28, 0.8);
@@ -93,14 +128,102 @@
     }
     .sobre-mi-full {
   width: 100%;
-  background-color: rgba(28, 28, 28, 0.8);
+  background-color: #1c1c1ccc;
   color: #f5f5f5;
   padding: 60px 20px;
   border-radius: 0;
   margin: 0;
 }
-
-  </style>
+.porque-escribo-full {
+  width: 100%;
+  background-color: #1c1c1ccc;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  border-radius: 0;
+  margin: 0;
+}
+/* Contador historias */
+.contador-section {
+  background-color: #1c1c1ccc;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.contador-section h2 {
+  color: rgb(0, 0, 0);
+}
+.contador-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.contador-box {
+  background: lab(100% 0.01 -0.01);
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.contador-box:hover {
+  transform: scale(1.05);
+}
+.contador-box p {
+  color: white; /* Texto dentro de cada caja en blanco */
+}
+.contador-num {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black; 
+}  
+/*TITULOS*/
+.section-titulos {
+  text-align: center;
+  margin: 30px 0;
+}
+.titulos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.titulo-box {
+  background: #333;
+  color: #060606;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.titulo-box:hover {
+  background: #555;
+}
+.secciones-dinamicas {
+  margin-top: 50px;
+}
+.seccion {
+  padding: 50px 20px;
+  margin-bottom: 40px;
+  background: #000000;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.seccion h2 {
+  margin-bottom: 20px;
+}
+.btn-ver {
+  padding: 10px 15px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-ver:hover {
+  background: #555;
+}
+</style>
 </head>
 <body>
 
@@ -122,7 +245,6 @@
       </div>
     </div>
   </nav>
-
   <!-- Hero Section -->
    <section class="banner">
   <img src="assets/img/bannerGeneral.PNG" alt="Banner General" class="img-fluid w-100">
@@ -131,15 +253,81 @@
   <h1>Bienvenido... ¡Empieza a explorar!</h1>
 </section>
 
-<!-- Sobre mí -->
+<!-- Contador -->
+     <div class="my-4"></div>
+<section class="contador-section mb-5">
+  <h2 class="text-center mb-4" style="color: white;">📚 Historias Publicadas</h2>
+  <div class="contador-wrapper">
+    <div class="contador-box">
+      <p style="color: black;">Wattpad</p>
+      <span class="contador-num">7</span>
+    </div>
+    <div class="contador-box">
+      <p style="color: black;">Inkitt</p>
+      <span class="contador-num">3</span>
+    </div>
+  </div>
+</section>
+
+ <!-- Sobre mí -->
 <section class="sobre-mi-full mb-5">
-  <h1 class="text-center mb-4">Sobre mí</h1>
+  <h1 class="text-center mb-4">✨ Sobre mí</h1>
   <div class="bio-container text-center">
     <p>Tengo 19 años, escribo fanfics y novelas cortas desde hace pocos años. Me encanta escribir, me apasiona.</p>
-    <p>Soy española, Aries, y vivo bajo el lema:</p>
-    <h2>"MAKE FANFICS FEELS FREE"</h2>
-    <p>Amante de los perros y soñadora de mundos mágicos.</p>
-    <p>Gracias por formar parte de mi universo literario.</p>
+    <p>Soy española, Aries, y vivo bajo el lema: "MAKE FANFICS FEELS FREE"</p>
+    <div class="my-4"></div>
+  </div>
+</section>
+<!-- ¿Por qué escribo? -->
+    <section class="porque-escribo-full mb-5">
+  <h2 class="text-center mb-4">📝¿Por qué escribo?</h2>
+  <div class="bio-container text-center">
+    <p>Escribo porque las palabras son mi refugio, mi forma de crear mundos y compartir emociones. 
+    <p>Cada historia es una oportunidad para soñar.</p>
+    <p>Mi inspiración nace de la música, los libros y mi imaginación.</p>
+    <div class="my-4"></div>
+  </div>
+</section>
+
+<!-- Títulos -->
+<section class="section-titulos">
+  <h2>Explora Secciones</h2>
+<section class="secciones-dinamicas">
+  <div class="seccion" id="destacadas">
+    <h2>Historias Destacadas</h2>
+    <p>Aquí van las historias destacadas, con su contenido visible.</p>
+  </div>
+
+  <div class="seccion" id="ultimas">
+    <h2>Últimas Publicaciones</h2>
+    <p>Aquí se muestran las últimas publicaciones actualizadas.</p>
+  </div>
+
+  <div class="seccion" id="top5">
+    <h2>Top 5 Más Leídas</h2>
+    <p>Lista de las cinco historias más leídas.</p>
+  </div>
+
+  <div class="seccion" id="recomendadas">
+    <h2>Historias Recomendadas</h2>
+    <p>Historias sugeridas para ti.</p>
+  </div>
+
+  <div class="seccion" id="lanzamientos">
+    <h2>Próximos Lanzamientos</h2>
+    <p>Detalles de próximos lanzamientos.</p>
+  </div>
+
+  <div class="seccion" id="comunidad">
+    <h2>Comunidad Activa</h2>
+    <p>Interacciones y actividades de la comunidad.</p>
+    <!-- Añadir el bio-container con enlace a WhatsApp -->
+    <div class="bio-container">
+      https://wa.me/XXXXXXXXXXX
+        icono-whatsapp.png
+        Contactar por WhatsApp
+      </a>
+    </div>
   </div>
 </section>
 
@@ -158,10 +346,10 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+
 // Script para manejar el estado de login en la navbar
 const usuarioLogueado = localStorage.getItem("usuarioLogueado") === "true";
 const userName = localStorage.getItem("userName") || "username";
-
 const loginItem = document.getElementById('loginItem');
 const userItem = document.getElementById('userItem');
 const userNameSpan = document.getElementById('userName');
@@ -189,6 +377,16 @@ if (logoutBtn) {
         }
     });
 }
+// Sección de títulos interactiva:
+document.querySelectorAll('.titulo-box').forEach(box => {
+  box.addEventListener('click', () => {
+    const targetId = box.dataset.target;
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
 </script>
 </body>
 </html>
