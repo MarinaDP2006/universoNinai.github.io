@@ -177,10 +177,11 @@
   <!-- Navbar común -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Universo Ninai</a>
+      <a class="navbar-brand" href="index.html">Universo Ninai</a> 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon bg-light"></span>
       </button>
+      <!-- MENU-->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -199,6 +200,7 @@
 <section class="hero text-center py-5">
   <h1>Bienvenido... ¡Empieza a explorar!</h1>
 </section>
+
 <!-- Sobre mí -->
 <section class="sobre-mi-full mb-5">
   <h1 class="text-center mb-4">Sobre mí</h1>
@@ -209,13 +211,6 @@
     <p>Amante de los perros y soñadora de mundos mágicos.</p>
     <p>Gracias por formar parte de mi universo literario.</p>
   </div>
-</section>
-
-<!-- TEST DE PERSONAJE para users logados--> 
- <section class="container my-5 text-center">
-  <h2>¿Qué personaje eres?</h2>
-  <p>Responde unas preguntas y descúbrelo</p>
-  <a href="pages/test.html" class="btn btn-gold">Haz el test</a>
 </section>
 
 <!-- Redes Sociales -->
@@ -247,7 +242,6 @@ if (usuarioLogueado) {
     userItem?.classList.remove('d-none');
     userNameSpan && (userNameSpan.textContent = userName);
 }
-
 // Manejar logout
 if (logoutBtn) {
     logoutBtn.addEventListener('click', function(e) {
@@ -261,7 +255,6 @@ if (logoutBtn) {
             localStorage.removeItem("userEmail");
             localStorage.removeItem("userPicture");
             localStorage.removeItem("googleAuthToken");
-            
             location.reload();
         }
     });
