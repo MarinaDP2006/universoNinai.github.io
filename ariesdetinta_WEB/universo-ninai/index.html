@@ -223,7 +223,54 @@
 .btn-ver:hover {
   background: #555;
 }
-</style>
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25D366;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-link:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-link:active {
+            transform: translateY(-1px);
+        }
+        
+        .whatsapp-icon {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .info-box {
+            background-color: hsl(0, 0%, 0%);
+            border-left: 4px solid #25D366;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        @media (max-width: 600px) {
+            .seccion {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -318,17 +365,16 @@
     <p>Detalles de próximos lanzamientos.</p>
   </div>
 
-  <div class="seccion" id="comunidad">
-    <h2>Comunidad Activa</h2>
-    <p>Interacciones y actividades de la comunidad.</p>
-    <!-- Añadir el bio-container con enlace a WhatsApp -->
-    <div class="bio-container">
-      https://wa.me/XXXXXXXXXXX
-        icono-whatsapp.png
-        Contactar por WhatsApp
-      </a>
-    </div>
-  </div>
+    <section class="seccion" id="comunidad">
+        <h2>Comunidad</h2>
+        <p>Entra en mi comunidad para saber más.</p>
+           <div class="bio-container">
+            <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-link" target="_blank">
+                <span class="whatsapp-icon">📱</span>
+                Unirse a la comunidad de WhatsApp
+            </a>
+        </div>
+    </section>
 </section>
 
 <!-- Redes Sociales -->
